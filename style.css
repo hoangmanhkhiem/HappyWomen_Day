@@ -1,0 +1,138 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+} */
+@font-face {
+	font-family: myFont;
+	src: url(Pacifico-Regular.ttf);
+}
+.container {
+  background: url("https://cdn.sforum.vn/sforum/wp-content/uploads/2023/02/hinh-nen-8-3-dep-9.jpg")
+    no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+  animation: rotate ease 2s infinite;
+  transition: all 2s ease;
+}
+.women-img {
+  position: absolute;
+  right: 0;
+  width: 20%;
+}
+.content-input {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.three-heading {
+  font-size: 30px;
+  color: rgb(202, 241, 57);
+
+  margin: 20px 0;
+  animation: changColor linear 1s infinite;
+  transition: all 1s ease;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.input-label {
+  font-size: 24px;
+  color: rgb(154, 245, 101);
+  font-family: "Pacifico-Regular", cursive;
+}
+input {
+  margin: 0 12px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 6px 4px;
+  color: rgb(245, 166, 101);
+}
+.btn {
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 30px;
+  top: 120%;
+  padding: 8px 12px;
+  border-radius: 24px;
+  background-color: rgb(245, 101, 214);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9) inset;
+  font-size: 18px;
+  font-family: "Pacifico-Regular";
+}
+@keyframes changColor {
+  0% {
+    color: rgb(249, 250, 246);
+  }
+  50% {
+    color: rgb(43, 188, 245);
+  }
+  75% {
+    color: rgb(229, 252, 29);
+  }
+  100% {
+    color: rgb(202, 241, 57);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.congratulate {
+  position: absolute;
+  background-color: rgb(255, 166, 236);
+  left: 32%;
+  width: 36%;
+  height: 30%;
+  top: 60%;
+  cursor: pointer;
+  border-radius: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  display: none;
+  transition: all 1s ease-in;
+  animation: fadeIn ease-in 1s;
+}
+.head {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+.f-heading {
+  font-family: "Pacifico-Regular", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(241, 110, 110);
+  margin-top: 20px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

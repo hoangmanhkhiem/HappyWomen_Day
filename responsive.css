@@ -1,0 +1,26 @@
+@media (max-width: 739px) {
+  .women-img {
+    width: 40%;
+  }
+  .content-input {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .three-heading {
+    font-size: 24px;
+  }
+  .btn {
+    right: 50px;
+  }
+  .congratulate {
+    left: 10%;
+    top: 45%;
+    width: 80%;
+    height: 30%;
+  }
+  .head {
+    font-size: 16px;
+  }
+}
